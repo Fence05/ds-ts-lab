@@ -24,7 +24,3 @@ export interface EmailContact {
     name: string;
     email: string
 }
-
-export interface Name {
-    name: string;
-}

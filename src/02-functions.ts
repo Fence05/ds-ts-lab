@@ -55,9 +55,9 @@ function sortColleagues (colleagues: Colleague[], sorter: (c1: Colleague, c2: Co
   return fullResult.slice(0,end)
 }
 // Test invocations
-console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
-console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
-console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length))); // NEW
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
+//console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length))); // NEW
 
 
 
@@ -68,3 +68,18 @@ function findFriends(fs: Friend[], criteria: (f: Friend) => boolean) {
 
 //console.log(findFriends(friends, (fri) => fri.name.startsWith('Pa')));
 //console.log(findFriends(friends, (friend) => friend.age < 35));
+
+
+
+
+
+function addInterest(fs: Friend, interest: string, ) {
+  if (fs.interests === undefined) {
+    fs.interests = [];
+  }
+  fs.interests.push(interest);
+  return fs.interests;
+}
+
+
+console.log(addInterest(friends[0], 'Politics'))
