@@ -94,4 +94,4 @@ function getBuddyListFriends(list: BuddyList): Friend[] {
     return result
 }
 
-console.log("Friends Only Buddy List: ", getBuddyListFriends(myBandBuddies));
+//console.log("Friends Only Buddy List: ", getBuddyListFriends(myBandBuddies));
