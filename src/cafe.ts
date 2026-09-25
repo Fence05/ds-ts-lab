@@ -172,3 +172,4 @@ console.log(describe(lunchCombo.items[0]));//bug 2 : describe function needs to 
 // combo deal, so I picked from lunch combo, that has menu items in the array, and pick the first menu item
 console.log(updateItem(soup, { price: 7.00 })); //bug 3 : price is string not number here, changing to number by removing quotes
 console.log(firstMatch(menu, (i) => i.nutrition.calories < 300));//bug 4 : calories is nested in nutrition
+
