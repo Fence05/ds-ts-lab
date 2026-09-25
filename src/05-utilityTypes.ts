@@ -18,7 +18,7 @@ function secureFindFriends(friends: Friend[], criteria: (f: Friend) => boolean):
 }
 
 let result = secureFindFriends(friends, (f: Friend) => f.age < 30)
-console.log(result)
+//console.log(result)
 
 
 function generateEventPass(colleague: Colleague): EventPass {
